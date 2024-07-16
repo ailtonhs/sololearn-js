@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indrodução JavaScript</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            margin: 10px;
+            border-style: none;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #4caf4fa8;
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Iteratividade com Imagens</h1>
+    </header>
+
+
+    <img id="robot" src="robot-parado.jpg" alt="robot">
+
+    <div>
+        <button onclick="document.getElementById('robot').src='robot-esquerda.jpg'">Esquerda</button>
+
+        <button onclick="document.getElementById('robot').src='robot-parado.jpg'">Parado</button>
+
+        <button onclick="document.getElementById('robot').src='robot-direita.jpg'">Direita</button>
+    </div>
+
+</body>
+
+</html>
