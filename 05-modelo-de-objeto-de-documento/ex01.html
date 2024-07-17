@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvore DOM</title>
+    <style>
+       
+        
+        header {
+            text-align: center;
+        }
+
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Document Object Model</h1>
+    </header>
+
+    <section>
+        <h2>Árvore DOM</h2>
+
+        <p>A estrutura de uma págna web pode ser representada como uma árvore. Isso é útil ao criar páginas dinâmicas.</p>
+
+        <img src="arvore-dom.webp" alt="árvore DOM" width="80%">
+    </section>
+
+    <div>
+        <p>Assim como em uma árvore genealógica, existem relações entre diferentes elementos em uma página.</p>
+
+        <p>Você pode se referir a qualquer elemento no DOM de uma página com código JavaScript.</p>
+    </div>
+
+    <div>
+        <p><b>Document.getElementById()</b> é usado para acessar elementos em uma página com ID específico.</p>
+
+        <pre>
+            <code>
+                &lt;p id="p1"&gt;Aqui é um parágrafo &lt;/p&gt;
+
+                &lt;script&gt;
+                    document.getElementById('p1').textContent = 'Parágrafo alterado';
+                &lt;/script&gt;
+            </code>
+        </pre>
+
+        <p><b>Propriedade DOM</b> são valores(de elementos HTML) que você pode obter, definir ou alterar.</p>
+
+        <p><b>.textContent</b> é usado para acessar o conteúdo de texto de um elemento.</p>
+    </div>
+
+    <div>
+        <p>Você pode usar variáveis para armazenar informações sobre os elementos HTML</p>
+
+        <pre>
+            <code>
+                &lt;p id="t1"&gt;Aqui vai um parágrafo&lt;/p&gt;
+
+                &lt;script&gt;
+                    let c = document.getElementById('t1').textContent;
+                    console.log(c);
+                    alert(c)
+                &lt;/script&gt;
+            </code>
+        </pre>
+    </div>
+
+    <div>
+        <p>Toda vez que você precisa modificar um elemento do DOM, você precisa acessá-lo primeiro. Uma maneira conveniente de manter o elemento na memória de trabalho é armazenar seus detalhes em uma variável que você pode chamar mais tarde no seu código, quantas vezes precisar.</p>
+
+        <pre>
+            <code>
+                let paragrafo3 = document.getElementById('p3');
+            </code>
+        </pre>
+    </div>
+
+    <div>
+        <p>Você pode modificar elementos alterando as propriedades DOM no código JavaScript.</p>
+
+        <pre>
+            <code>
+                &lt;p id="p1"&gt;Aqui é um parágrafo&lt;/p&gt;
+
+                &lt;script&gt;
+                    let p = document.getElementById('p1');
+                    p.style.color = "blue";
+
+                    p.style.border = "solid";
+                &lt;/script&gt;
+            </code>
+        </pre>
+    </div>
+
+    <footer>
+        <h3>Lições Aprendidas</h3>
+
+        <h4>Incrível. Você aprendeu que:</h4>
+
+        <p>⭐ O <b>DOM</b> trata a estrutura de uma página web como uma árvore</p>
+
+        <p>⭐ Para obter informações de um elemento e modificá-lo, primeiro você precisa acessá-lo</p>
+
+        <p>⭐ Armazenar as informações do elemento em uma variável é uma maneira conveniente de se referir a ele mais tarde em seu script</p>
+    </footer>
+</body>
+</html>
