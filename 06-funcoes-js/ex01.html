@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>Funções JavaScript</h1>
+        <p><b>Funções </b>são blocos de construção chave no JavaScript. Eles vão de ajudar a tornar suas páginas web interativas e dinâmicas.</p>
+    </header>
+
+    <article>
+        <section>
+            <h2>Declarações JavaScript</h2>
+            <p>Declarações pode ser agrupadas em <b>blocos de código. Chave{}</b> são usadas para criar um bloco de código</p>
+
+            <pre>
+                <code>
+                    {
+                        let x = "Game Over";
+                        alert(x);
+                        console.log(x);
+                    }
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Funções JavaScript</h2>
+
+            <p>Uma função é um bloco de código que executa uma tarefa específica. Use a palavra-chave <b>function</b> seguida por um <b>name</b> para criar uma nova função.</p>
+
+            <pre>
+                <code>
+                    function doSomething() {
+                        let x = "Game Over";
+                        alert(x);
+                        console.log(x);
+                    }
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Chamando uma Função</h2>
+
+            <p>Uma função contém o código para executar uma tarefa. Este código será executado quando a função for <b>Chamada.</b> Para <b>chamar</b> uma função use seu <b>nome</b> seguido de <b>parênteses().</b></p>
+
+            <p id="p1">Vai acontecer alteração nesse parágrafo quando a função for chamada.</p>
+
+            <button onclick="minhaFuncao()">Chama função</button>
+
+            
+        </section>
+    </article>
+
+    <footer>
+        <h3>Lições Aprendidas</h3>
+
+        <h4>Muito bem! Você aprendeu que:</h4>
+
+        <p>⭐ Funções são blocos de código reutilizáveis que executam tarefas específicas</p>
+
+        <p>⭐ Funções tornam seu código mais organizado </p>
+    </footer>
+
+
+    <script>
+        function minhaFuncao() {
+            let paragrafo = document.getElementById('p1');
+
+            paragrafo.style.border = 'solid red'
+        }
+    </script>
+</body>
+</html>
